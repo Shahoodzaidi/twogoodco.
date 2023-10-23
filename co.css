@@ -1,0 +1,658 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+*::-moz-selection{
+    background-color:black;
+    color: white;
+}
+*::selection{
+    background-color:black;
+    color: white;
+}
+body{
+    background-color: #F7F7F7;
+}
+body html{
+    height: 100%;
+    width: 100%;
+    
+}
+.navbar{
+  
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    z-index: 99;
+    padding: 25px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+   
+}
+
+.cursor{
+    height: 150px;
+    width: 150px;
+    position: fixed;
+    background-color: rgba(255, 235, 205, 0.733);
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, - 50% ) ;
+        -ms-transform: translate(-50%, - 50% ) ;
+            transform: translate(-50%, - 50% ) ;
+    opacity:0;
+    
+}
+.cursor1{
+    height: 150px;
+    width: 150px;
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.365);
+border-radius: 50%;
+-webkit-transform: translate(-50%, - 50%);
+    -ms-transform: translate(-50%, - 50%);
+        transform: translate(-50%, - 50%);
+opacity: 0;
+
+}
+.nav-part2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    
+    -webkit-box-pack: justify;
+    
+        -ms-flex-pack: justify;
+    
+            justify-content: space-between;
+}
+.nav-part2 .links a{
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 10px;
+    color: #333;
+   text-transform: uppercase;
+    font-weight: 400;
+}
+.links  i{
+  font-size: 14px;
+}
+.icons i{
+    margin-right: 30px;
+    font-size: 13px;
+ }
+
+.nav-part2 .icons{
+    font-size: 18px;
+    margin: 0 20px;
+}
+.page1{
+   min-height: 100vh;
+    width: 100%;
+    position: relative;
+   padding-top: 0 4vw;   
+   padding: 30vh 0;
+}
+.page1 h1{
+    font-size: 15vw;
+    text-transform: uppercase;   
+    font-family: futura;
+    line-height: 13.3vw;
+    letter-spacing: -3px;
+}
+.image{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.page2{
+   min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3vw 1vw;
+    overflow: hidden;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.page2 .elem{
+  height: 100%;
+  width: 31%;
+ 
+}
+ .page2.elem img{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.image svg{
+      position: absolute;
+      bottom: 60%;
+      right: 29%;
+      overflow: hidden;
+      -webkit-animation: rotate 10s linear infinite;
+              animation: rotate 10s linear infinite;
+}
+ .image  span{
+    position: absolute;
+    bottom: 69%;
+    right: 33%;
+    text-transform: uppercase;
+
+} 
+.page3{
+    height: 30vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    bottom: 40vh;
+   
+}
+.page3 .text{
+    height: 40vh;
+    width: 25%;
+   
+    
+}
+#txt1{
+  height: 20vh;
+  font-size: 1vw;
+  font-family: futura;
+ margin-left: 1vh;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
+#txt2{
+    height: 20vh;
+    width: 20%;
+    margin-right: 10vw;
+    position: relative;
+    
+}
+#txt2 h5{
+  margin: 1vw;
+  font-weight: 200;
+  font-size: .8em;
+}
+#txt2 span{
+    margin-left: 1vw;
+    border-bottom: 1px solid black;
+}
+.page4{
+    height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    /* background-color: crimson; */
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    bottom: 40vh;
+}
+.content{
+    height: 70vh;
+    cursor: pointer;
+    width: 100%;
+   
+    
+}
+.content img{
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.content h6{
+    font-size: 1.2rem;
+    margin-left: 16vw;
+    text-transform: capitalize;
+   
+}
+.content #span1{
+    font-size: 1rem;
+ position: absolute;
+ left: -5%;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+    
+}
+.content #span2{
+    font-size: 1rem;
+ position: absolute;
+ right: 30%;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+    
+}
+.content #cnt{
+    width: 100%;
+    position: relative;
+    left: -11%;
+}
+.content span{
+    margin-left: 26vw;
+}
+
+@-webkit-keyframes rotate{
+    from{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+       
+    }
+}
+
+@keyframes rotate{
+    from{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+        
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+       
+    }
+}
+
+@media (max-width:600px) {
+
+
+     .navv svg {
+           height: 9vw;
+           position: relative;
+           right: 16%;
+          
+     }
+     .nav-part2 .links{
+        display: none;
+     }
+
+    .page1{
+       
+        min-height: 70vh;
+        width: 100%;
+        padding: 25vh 3vw;
+        margin-right: 7vw;
+        overflow: hidden;
+    
+    }
+
+    .page1 h1{
+        font-size: 20vw;
+        text-transform: uppercase;   
+        font-family: futura;
+       line-height: 15vw;
+       letter-spacing: 2px;
+       width: 100%;
+      
+       
+    
+    }
+    .image img{
+        position:relative;
+        right: 50%;
+        height: 24rem;
+        top: 40%;
+    }
+    .image svg{
+        margin-bottom:-48vw ;
+       margin-right: -29vw;
+       height: 8rem;
+       
+    }
+    .image span{
+        margin-bottom:-52vw ;
+        font-family: futura;
+        margin-right: -13vw;
+    }
+    .page2{
+        min-height: 100vh;
+         width: 100%;
+         position: relative;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+         -webkit-box-align: center;
+             -ms-flex-align: center;
+                 align-items: center;
+         padding: 5vw 3vw;
+        overflow: hidden;
+         -webkit-box-pack: justify;
+             -ms-flex-pack: justify;
+                 justify-content: space-between;
+        
+     }
+     .page2 .elem{
+       height: 100vh;
+       width: 100%;
+       margin-bottom: 3vw;
+       overflow: hidden;
+      
+       
+     
+     }
+     .page2 .elem img{
+         height: 100%;
+         width: 100%;
+         -o-object-fit: cover;
+            object-fit: cover;
+         -o-object-position: center;
+            object-position: center;
+     
+     }
+     .page3{
+        height: 50vh;
+        width: 100%;
+        bottom: 20vh;
+        display: block;
+     }
+     .page3 #txt1 {
+        height: 30vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+       width: 100%;
+      font-size: 5.5vw;
+      letter-spacing: .9px;
+      
+     
+ 
+     }
+    
+     
+     #txt2{
+        height: 20vh;
+        width: 100%;
+        font-size: 2.3vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        
+    }
+    #txt2 span{
+        
+     position:absolute;
+       left: 2%;
+      bottom: -19%;
+       font-size: 1.3vh;
+    }
+
+    .page4{
+       height: 10vh;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+        position: relative;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        bottom: 20vh;
+        
+    }
+    .content{
+       height: 0vh;
+       width: 100%;
+        margin-left: 1.5vw;
+        margin-top: 20%;
+    }
+    .content img{
+       height: 15vh;
+        width: 100%;
+        -o-object-position: center;
+           object-position: center;
+        -o-object-fit: cover;
+           object-fit: cover;
+
+       
+    }
+    .content h6{
+        font-size: .4rem;
+        margin-left: 11vw;
+       
+    }
+    .content span{
+        font-size: .5rem;
+        margin-left: 22vw;
+    }
+    .content #cnt{
+        width: 100%;
+    
+    }
+    .content #span1{
+       
+        position: relative;
+    }
+    .content #span2{
+        position: relative;
+        left: -7%;
+    }
+  
+}
+@media (min-width:768px) and (max-width:1024) {
+    .navv svg {
+     margin-left: 5vw;
+       
+  }
+  .nav-part2 .links a{
+       font-size: 5vw;
+      position: relative;
+      right: 6%;
+      margin-right: 18vw;
+  }
+  .links #icn1{
+    font-size:5vw;
+
+  }
+  .icons i {
+    font-size: 7vw;
+    margin-right: 14vw;
+    position: relative;
+    right: 10%;
+  }
+  .page1{
+    height: 100%;
+    width: 100%;
+
+   
+    
+  }
+  .page1 #change{
+    font-size: 52vw;
+    width: 100%;
+    position: relative;
+    right: -6%;
+   line-height: 70vw;
+ 
+
+  }
+  .page1 #the{
+    font-size: 30vw;
+    line-height: 14vw;
+    
+    
+  }
+  .page1 #course{
+    font-size: 30vw;
+    width: 100%;
+   position: absolute;
+   top: 15%;
+  right: -91%;
+    
+  }
+  .image svg{
+    
+
+    position: absolute;
+    right: -78%;
+  }
+ 
+  .image span{
+    font-size: 2.2rem;
+    position: absolute;
+    right: -73%;
+    top: 28%;
+    font-family: futura;
+}
+.page2{
+    min-height: 100vh;
+     width: 100%;
+     position: relative;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient:vertical;
+     -webkit-box-direction:normal;
+         -ms-flex-direction:column;
+             flex-direction:column;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     padding: 5vw 3vw;
+     right: -75%;
+   
+     
+    
+ }
+ .page2 .elem{
+   height: 100vh;
+   width: 100%;
+   margin-bottom: 3vw;
+ 
+  
+   
+  
+ 
+ }
+ .page2 .elem img{
+     height: 100vh;
+     width: 100%;
+  
+     -o-object-fit: cover;
+  
+        object-fit: cover;
+     -o-object-position: center;
+        object-position: center;
+   
+     
+    
+ }
+ .page3{
+    height: 100vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+   
+    
+   
+   
+}
+.page3 .text{
+    
+  width: 100%;
+  height: 100vh;
+ 
+  
+    
+}
+
+.page3 .text h1{
+   
+   font-size: 18vw;
+   height: 100%;
+   width: 100%;
+   top: 20%;
+   position: absolute;
+   left: 27%;
+   min-width:2000px;
+  
+   
+    
+}
+/* .text #hover{
+    font-size: 1.8rem;
+} */
+.page3 #txt2{
+   
+    height: 100vh;
+    width: 100%;
+    min-width: 700px;
+    position: relative;
+     left: 26%; 
+    font-size: 5vw;
+    display: none;
+ 
+ }
+
+     
+   
+#crsr2 img{
+    margin-top: 2vw;
+margin-left: 40vw;
+}
+#crsr2 #cnt{
+margin-left: 70vw;
+font-size: 2em;
+
+}
+ 
+.content h6{
+    font-size: 2em;
+    margin-left: 30vw;
+}
+.content #span1{
+    position: absolute;
+   font-size: 2em;
+   left: 160%;
+   top: 108%;
+}
+.content #span2{
+    position: absolute;
+    font-size: 2em;
+    right: 40%;
+    
+}
+ 
+ 
+
+  
+}
+ 
